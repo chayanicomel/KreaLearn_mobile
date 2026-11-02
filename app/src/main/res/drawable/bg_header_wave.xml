@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="100dp"
+    android:viewportWidth="120"
+    android:viewportHeight="100">
+
+    <!-- Lapisan belakang: gelombang kuning (aksen) -->
+    <path
+        android:fillColor="@color/yellow_primary"
+        android:pathData="M0,0 L120,0 L120,48 C90,64 36,28 0,50 Z" />
+
+    <!-- Lapisan depan: gelombang hijau utama -->
+    <path
+        android:fillColor="@color/green_deep"
+        android:pathData="M0,0 L120,0 L120,42 C90,58 36,22 0,44 Z" />
+
+    <!-- Lingkaran besar transparan -->
+    <path
+        android:fillAlpha="0.08"
+        android:fillColor="#FFFFFF"
+        android:pathData="M80,14 a20,20 0 1,0 40,0 a20,20 0 1,0 -40,0 Z" />
+
+    <!-- Lingkaran kecil transparan -->
+    <path
+        android:fillAlpha="0.06"
+        android:fillColor="#FFFFFF"
+        android:pathData="M76,32 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 Z" />
+
+    <!-- Titik aksen kuning -->
+    <path
+        android:fillColor="@color/yellow_primary"
+        android:pathData="M109,34 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0 Z" />
+
+    <!-- Titik aksen ungu -->
+    <path
+        android:fillColor="@color/purple_tertiary"
+        android:pathData="M67.5,8 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0 Z" />
+</vector>
