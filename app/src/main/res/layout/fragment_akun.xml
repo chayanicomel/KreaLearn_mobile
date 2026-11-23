@@ -78,6 +78,16 @@
                         android:text="Dashboard Belajar"
                         android:textColor="@color/navy_accent"
                         app:cornerRadius="26dp" />
+                    <Button
+                        android:id="@+id/btnKreator"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="12dp"
+                        android:backgroundTint="@color/yellow_soft"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Dashboard Kreator"
+                        android:textColor="@color/green_deep"
+                        app:cornerRadius="26dp" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 

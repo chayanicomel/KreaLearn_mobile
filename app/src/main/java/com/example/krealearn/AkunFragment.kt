@@ -43,6 +43,10 @@ class AkunFragment : Fragment() {
             startActivity(Intent(requireContext(), MateriActivity::class.java))
         }
 
+        binding.btnKreator.setOnClickListener {
+            startActivity(Intent(requireContext(), KelasKreatorActivity::class.java))
+        }
+
         binding.btnKembali.setOnClickListener {
             requireActivity().finish()
         }

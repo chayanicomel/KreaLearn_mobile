@@ -22,7 +22,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        // Inflate the layout for this fragment
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -35,18 +35,22 @@ class HomeFragment : Fragment() {
         binding.tvGreeting.text = "Halo, $username"
 
         binding.chipGroupFilter.setOnCheckedStateChangeListener { group, checkedIds ->
-            val selectedChipId = checkedIds.firstOrNull()
+            val selectedChipId = checkedIds.firstOrNull() // ambil id chip yang dipilih
             if (selectedChipId != null) {
                 val chip = group.findViewById<Chip>(selectedChipId)
                 Toast.makeText(requireContext(), "Filter: ${chip.text}", Toast.LENGTH_SHORT).show()
-
+                // Lakukan logika filter di sini
             }
+        }
+
+        binding.btnLihatSemua.setOnClickListener {
+            startActivity(Intent(requireContext(), KatalogKelasActivity::class.java))
         }
 
         binding.btnIkuti.setOnClickListener {
             Snackbar.make(binding.root, "Kelas berhasil diikuti", Snackbar.LENGTH_LONG)
                 .setAction("BATAL") {
-
+                    // batalkan ikuti kelas
                 }
                 .show()
         }
